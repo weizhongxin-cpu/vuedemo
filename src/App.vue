@@ -1,11 +1,19 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <n-table :bordered="false" :single-line="false" size="small">
+      <tbody>
+      <tr>
+        <td><router-link to="/computed">computed</router-link></td>
+        <td><router-link to="/ifshow">IfAndShow</router-link></td>
+        <td>彻底废除</td>
+        <td>...</td>
+        <td>干！我刚才背的是啥</td>
+      </tr>
+      </tbody>
+    </n-table>
   </div>
   <router-view/>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
