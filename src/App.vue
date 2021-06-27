@@ -5,9 +5,7 @@
       <tr>
         <td><router-link to="/computed">computed</router-link></td>
         <td><router-link to="/ifshow">IfAndShow</router-link></td>
-        <td>彻底废除</td>
-        <td>...</td>
-        <td>干！我刚才背的是啥</td>
+        <td><router-link to="/for-if">ForIf</router-link></td>
       </tr>
       </tbody>
     </n-table>
