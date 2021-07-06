@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import Computed from "@/components/Computed";
 import IfAndShow from '@/components/IfAndShow'
 import ForIf from "@/components/ForIf";
+import VModel from '@/components/V-Model-1'
+import DateFormatDemo from "@/components/DateFormatDemo";
 
 const routes = [
     {
@@ -25,6 +27,16 @@ const routes = [
         path: '/for-if',
         name: 'ForIf',
         component: ForIf
+    },
+    {
+        path: '/vModel',
+        name: 'vModel',
+        component: VModel
+    },
+    {
+        path: '/dateFormat',
+        name: 'dateFormat',
+        component: DateFormatDemo
     }
 ]
 

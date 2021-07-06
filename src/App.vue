@@ -6,6 +6,8 @@
         <td><router-link to="/computed">computed</router-link></td>
         <td><router-link to="/ifshow">IfAndShow</router-link></td>
         <td><router-link to="/for-if">ForIf</router-link></td>
+        <td><router-link to="/vModel">V-Model</router-link></td>
+        <td><router-link to="/dateFormat">dateFormat</router-link></td>
       </tr>
       </tbody>
     </n-table>
