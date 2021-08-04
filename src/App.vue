@@ -8,6 +8,7 @@
         <td><router-link to="/for-if">ForIf</router-link></td>
         <td><router-link to="/vModel">V-Model</router-link></td>
         <td><router-link to="/dateFormat">dateFormat</router-link></td>
+        <td><router-link to="/parent">parentComponent</router-link></td>
       </tr>
       </tbody>
     </n-table>

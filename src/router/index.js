@@ -1,18 +1,12 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
-import Home from '../views/Home.vue'
 import Computed from "@/components/Computed";
 import IfAndShow from '@/components/IfAndShow'
 import ForIf from "@/components/ForIf";
 import VModel from '@/components/V-Model-1'
 import DateFormatDemo from "@/components/DateFormatDemo";
+import Parent from "@/views/ParentComponent/Parent";
 
 const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: Home,
-        child: {}
-    },
     {
         path: '/computed',
         name: 'Computed',
@@ -37,6 +31,11 @@ const routes = [
         path: '/dateFormat',
         name: 'dateFormat',
         component: DateFormatDemo
+    },
+    {
+        path: '/parent',
+        name: 'parent',
+        component: Parent
     }
 ]
 

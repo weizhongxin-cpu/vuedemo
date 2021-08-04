@@ -1,47 +1,37 @@
 <template>
   <div>
-    <n-table :bordered="false" :single-line="false">
-      <thead>
-      <tr>
-        <th>Abandon</th>
-        <th>Abormal</th>
-        <th>Abolish</th>
-        <th>...</th>
-        <th>万事开头难</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>放弃</td>
-        <td>反常的</td>
-        <td>彻底废除</td>
-        <td>...</td>
-        <td>干！我背的是啥</td>
-      </tr>
-      <tr>
-        <td format="yyyy-MM-dd"><n-time :time="0" format="yyyy-MM-dd">{{ date }}</n-time></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-      </tr>
-      </tbody>
-    </n-table>
+    <Common :getDate="date" :person="propPerson" @showPerson="showPerson"></Common>
   </div>
 </template>
 
 <script>
 import Moment from 'moment'
+import Common  from '@/components/Common'
 export default {
   name: "DateFormatDemo",
-  data(){
+  components:{
+    Common
+  },
+  data() {
     return {
-      date: new Date()
+      date: new Date(),
+      person: [
+        {id: 1, name: '赵云'},
+        {id: 2, name: '刘备'},
+        {id: 3, name: '关羽'},
+        {id: 4, name: '张飞'},
+      ],
+      propPerson: []
+    }
+  },
+  filters: {
+    dateFormat: function (date) {
+      return Moment(date).format("YYYY-MM-DD")
     }
   },
   methods: {
-    dateFormat:function(date){
-      return Moment(date).format("YYYY-MM-DD")
+    showPerson(){
+      this.propPerson = this.person
     }
   }
 }
